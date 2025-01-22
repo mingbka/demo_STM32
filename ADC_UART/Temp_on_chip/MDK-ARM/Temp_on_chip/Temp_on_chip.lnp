@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"temp_on_chip\startup_stm32f103xb.o"
+"temp_on_chip\main.o"
+"temp_on_chip\stm32f1xx_it.o"
+"temp_on_chip\stm32f1xx_hal_msp.o"
+"temp_on_chip\stm32f1xx_hal_gpio_ex.o"
+"temp_on_chip\stm32f1xx_hal_adc.o"
+"temp_on_chip\stm32f1xx_hal_adc_ex.o"
+"temp_on_chip\stm32f1xx_hal.o"
+"temp_on_chip\stm32f1xx_hal_rcc.o"
+"temp_on_chip\stm32f1xx_hal_rcc_ex.o"
+"temp_on_chip\stm32f1xx_hal_gpio.o"
+"temp_on_chip\stm32f1xx_hal_dma.o"
+"temp_on_chip\stm32f1xx_hal_cortex.o"
+"temp_on_chip\stm32f1xx_hal_pwr.o"
+"temp_on_chip\stm32f1xx_hal_flash.o"
+"temp_on_chip\stm32f1xx_hal_flash_ex.o"
+"temp_on_chip\stm32f1xx_hal_exti.o"
+"temp_on_chip\stm32f1xx_hal_tim.o"
+"temp_on_chip\stm32f1xx_hal_tim_ex.o"
+"temp_on_chip\stm32f1xx_hal_uart.o"
+"temp_on_chip\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Temp_on_chip\Temp_on_chip.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Temp_on_chip.map" -o Temp_on_chip\Temp_on_chip.axf

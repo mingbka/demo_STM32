@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"do_sang_led_pwm\startup_stm32f103x6.o"
+"do_sang_led_pwm\main.o"
+"do_sang_led_pwm\stm32f1xx_it.o"
+"do_sang_led_pwm\stm32f1xx_hal_msp.o"
+"do_sang_led_pwm\stm32f1xx_hal_gpio_ex.o"
+"do_sang_led_pwm\stm32f1xx_hal_tim.o"
+"do_sang_led_pwm\stm32f1xx_hal_tim_ex.o"
+"do_sang_led_pwm\stm32f1xx_hal.o"
+"do_sang_led_pwm\stm32f1xx_hal_rcc.o"
+"do_sang_led_pwm\stm32f1xx_hal_rcc_ex.o"
+"do_sang_led_pwm\stm32f1xx_hal_gpio.o"
+"do_sang_led_pwm\stm32f1xx_hal_dma.o"
+"do_sang_led_pwm\stm32f1xx_hal_cortex.o"
+"do_sang_led_pwm\stm32f1xx_hal_pwr.o"
+"do_sang_led_pwm\stm32f1xx_hal_flash.o"
+"do_sang_led_pwm\stm32f1xx_hal_flash_ex.o"
+"do_sang_led_pwm\stm32f1xx_hal_exti.o"
+"do_sang_led_pwm\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Do_Sang_LED_PWM\Do_Sang_LED_PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Do_Sang_LED_PWM.map" -o Do_Sang_LED_PWM\Do_Sang_LED_PWM.axf
